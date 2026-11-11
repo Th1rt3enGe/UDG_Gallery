@@ -1,13 +1,173 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Proyectos | YaRe</title>
-    <meta name="description" content="Portafolio personal de Yared.">
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proyectos | YaRe</title>
+<meta name="description" content="Proyectos de UX/UI y UX Research de Cinthya González (YaRe).">
+<meta name="theme-color" content="#151314">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="css/fonts/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="css/fonts/Urbanist-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin><link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add("js");</script>
+<script src="js/main.js" defer></script>
+<script src="js/contours.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#main">Saltar al contenido</a>
 
+<header class="site-header">
+    <div class="wrap header-inner">
+        <a class="logo" href="index.html" aria-label="YaRe, inicio"><span class="logo-mark" aria-hidden="true"></span>YaRe</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+            <span class="sr-only">Menú</span><span class="bars" aria-hidden="true"></span>
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="Principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html" aria-current="page">Proyectos</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="main">
+    <section class="hero hero--short">
+        <svg class="contours" data-contours data-seed="13" aria-hidden="true"></svg>
+        <div class="stipple-band stipple-band--bottom stipple" aria-hidden="true"></div>
+        <div class="wrap hero-inner">
+            <p class="eyebrow">Portafolio</p>
+            <h1 class="display">Proy<span class="accent">ectos</span></h1>
+            <p class="lede">Investigación, benchmarking, pruebas de usabilidad y diseño de interfaces. Los casos de estudio están aquí; el resto vive en Behance.</p>
+        </div>
+    </section>
+
+    <section class="section" aria-label="Lista de proyectos">
+        <div class="wrap">
+            <div class="grid grid--3">
+                <!-- Caso de estudio 1 -->
+                <article class="card reveal">
+                    <a class="card-link" href="cases/caso-estudio-1.html">
+                        <div class="media">
+                            <img src="assets/img/lux-de-jesus.png" alt="Portada del proyecto Lux de Jesus" width="808" height="632" loading="lazy">
+                            <span class="media-ph" aria-hidden="true"><span>Lux de Jesus</span></span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="tags"><li class="tag--hot">Caso de estudio</li><li>UX/UI</li><li>EdTech</li></ul>
+                            <h2 class="card-title">Lux de Jesus</h2>
+                            <p class="card-text">App educativa de fe: diseño UX/UI desde la investigación hasta el prototipo.</p>
+                            <span class="card-cta">Ver caso <span aria-hidden="true">→</span></span>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Caso de estudio 2 -->
+                <article class="card reveal">
+                    <a class="card-link" href="cases/caso-estudio-2.html">
+                        <div class="media">
+                            <img src="assets/img/prime-video.png" alt="Portada del caso de investigación UX sobre Amazon Prime Video" width="808" height="632" loading="lazy">
+                            <span class="media-ph" aria-hidden="true"><span>Prime Video · Insights</span></span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="tags"><li class="tag--hot">Caso de estudio</li><li>UX Research</li><li>Insights</li></ul>
+                            <h2 class="card-title">Amazon Prime Video: Insights</h2>
+                            <p class="card-text">Investigación UX sobre la experiencia de la plataforma: hallazgos y oportunidades.</p>
+                            <span class="card-cta">Ver caso <span aria-hidden="true">→</span></span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card reveal">
+                    <a class="card-link" href="https://www.behance.net/gallery/244830937/Rediseno-estratgico-UXUI-basado-en-MVP" target="_blank" rel="noopener">
+                        <div class="media">
+                            <img src="assets/img/rediseno-mvp.png" alt="Portada del proyecto Rediseño estratégico UX/UI basado en MVP" width="808" height="632" loading="lazy">
+                            <span class="media-ph" aria-hidden="true"><span>Rediseño MVP</span></span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="tags"><li>UX/UI</li><li>Estrategia</li><li>Colaborativo</li></ul>
+                            <h2 class="card-title">Rediseño estratégico UX/UI basado en MVP</h2>
+                            <p class="card-text">Rediseño de un producto digital priorizando lo esencial a través de un MVP.</p>
+                            <span class="card-cta">Ver en Behance <span aria-hidden="true">↗</span><span class="sr-only"> (se abre en una pestaña nueva)</span></span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card reveal">
+                    <a class="card-link" href="https://www.behance.net/gallery/244121425/Usability-Testing-Prototype-Voting-Platform-UX" target="_blank" rel="noopener">
+                        <div class="media">
+                            <img src="assets/img/voting-platform.png" alt="Portada del proyecto Usability Testing y prototipo para una plataforma de votación" width="808" height="632" loading="lazy">
+                            <span class="media-ph" aria-hidden="true"><span>Voting Platform UX</span></span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="tags"><li>Usability Testing</li><li>Prototipado</li></ul>
+                            <h2 class="card-title">Usability Testing &amp; Prototype: Voting Platform</h2>
+                            <p class="card-text">Pruebas de usabilidad y prototipo para una plataforma de votación.</p>
+                            <span class="card-cta">Ver en Behance <span aria-hidden="true">↗</span><span class="sr-only"> (se abre en una pestaña nueva)</span></span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card reveal">
+                    <a class="card-link" href="https://www.behance.net/gallery/247258265/Benchmarking-UX" target="_blank" rel="noopener">
+                        <div class="media">
+                            <img src="assets/img/benchmarking-ux.png" alt="Portada del proyecto Benchmarking UX" width="808" height="632" loading="lazy">
+                            <span class="media-ph" aria-hidden="true"><span>Benchmarking UX</span></span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="tags"><li>UX Research</li><li>Benchmarking</li></ul>
+                            <h2 class="card-title">Benchmarking UX</h2>
+                            <p class="card-text">Análisis comparativo de competidores para detectar patrones y oportunidades.</p>
+                            <span class="card-cta">Ver en Behance <span aria-hidden="true">↗</span><span class="sr-only"> (se abre en una pestaña nueva)</span></span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card reveal">
+                    <a class="card-link" href="https://www.behance.net/cinthyaGonzález7" target="_blank" rel="noopener">
+                        <div class="media">
+                            <img src="assets/img/portfolio.png" alt="Portada del UXUI Portfolio 2025" width="808" height="632" loading="lazy">
+                            <span class="media-ph" aria-hidden="true"><span>Portfolio 2025</span></span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="tags"><li>UX/UI</li><li>Portafolio</li></ul>
+                            <h2 class="card-title">UX/UI Portfolio 2025</h2>
+                            <p class="card-text">Recopilación de proyectos y procesos de diseño UX/UI de 2025.</p>
+                            <span class="card-cta">Ver en Behance <span aria-hidden="true">↗</span><span class="sr-only"> (se abre en una pestaña nueva)</span></span>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--orange cta" aria-labelledby="cta-title">
+        <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 80V40C120 8 240 8 360 40s240 32 360 0 240-32 360 0 240 32 360 0V80Z"/></svg>
+        <div class="section-art" aria-hidden="true">
+            <div class="stipple-dots stipple-dots--a stipple"></div>
+            <div class="stipple-dots stipple-dots--b stipple"></div>
+        </div>
+        <div class="wrap reveal">
+            <p class="eyebrow">¿Te gustó lo que viste?</p>
+            <h2 class="h2" id="cta-title">Conversemos sobre tu próximo proyecto</h2>
+            <div class="actions">
+                <a class="btn btn--dark" href="contacto.html">Hablemos <span class="arrow" aria-hidden="true">→</span></a>
+                <a class="btn btn--dark" href="https://www.behance.net/cinthyaGonzález7" target="_blank" rel="noopener">Behance ↗<span class="sr-only"> (se abre en una pestaña nueva)</span></a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="wrap footer-inner">
+        <p>© <span data-year>2026</span> YaRe · Cinthya González · Diseño UX/UI</p>
+        <ul class="footer-links">
+            <li><a href="https://www.behance.net/cinthyaGonzález7" target="_blank" rel="noopener">Behance ↗<span class="sr-only"> (se abre en una pestaña nueva)</span></a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>

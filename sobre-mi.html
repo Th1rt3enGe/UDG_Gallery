@@ -1,13 +1,152 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sobre mí | YaRe</title>
-    <meta name="description" content="Portafolio personal de Yared.">
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sobre mí | YaRe</title>
+<meta name="description" content="Conoce a Cinthya González (YaRe), diseñadora UX/UI y UX Researcher en México.">
+<meta name="theme-color" content="#151314">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Urbanist:ital,wght@0,700;0,800;0,900;1,800;1,900&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add("js");</script>
+<script src="js/main.js" defer></script>
+<script src="js/contours.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#main">Saltar al contenido</a>
 
+<header class="site-header">
+    <div class="wrap header-inner">
+        <a class="logo" href="index.html" aria-label="YaRe, inicio"><span class="logo-mark" aria-hidden="true"></span>YaRe</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+            <span class="sr-only">Menú</span><span class="bars" aria-hidden="true"></span>
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="Principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="sobre-mi.html" aria-current="page">Sobre mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="main">
+    <section class="hero hero--short">
+        <svg class="contours" data-contours data-seed="33" aria-hidden="true"></svg>
+        <div class="stipple-band stipple-band--bottom stipple" aria-hidden="true"></div>
+        <div class="wrap hero-inner split">
+            <div>
+                <p class="eyebrow">Sobre mí</p>
+                <h1 class="display">Cinthya <span class="accent">González</span></h1>
+                <p class="lede">Diseñadora UX/UI y UX Researcher · México. Disponible para trabajar tiempo completo.</p>
+                <div class="actions">
+                    <a class="btn btn--primary" href="contacto.html">Contáctame <span class="arrow" aria-hidden="true">→</span></a>
+                    <a class="btn" href="https://www.behance.net/cinthyaGonzalez7" target="_blank" rel="noopener">Behance ↗<span class="sr-only"> (se abre en una pestaña nueva)</span></a>
+                    <a class="btn" href="https://mx.linkedin.com/in/cinthya-yared-reyes-uxui" target="_blank" rel="noopener">LinkedIn ↗<span class="sr-only"> (se abre en una pestaña nueva)</span></a>
+                </div>
+            </div>
+            <div class="media media--portrait">
+                <img src="assets/img/me.png" alt="Retrato de Cinthya" width="710" height="710" loading="lazy">
+                <span class="media-ph" aria-hidden="true"><span>YaRe</span></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--cream" aria-labelledby="bio-title">
+        <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 80V40C120 8 240 8 360 40s240 32 360 0 240-32 360 0 240 32 360 0V80Z"/></svg>
+        <div class="section-art" aria-hidden="true">
+            <svg class="contours" data-contours data-seed="5" data-scale="520"></svg>
+        </div>
+        <div class="wrap split">
+            <div class="reveal">
+                <p class="eyebrow">Mi historia</p>
+                <h2 class="big-quote" id="bio-title">Me gusta entender el <span class="accent">por qué</span> antes de diseñar el <span class="accent">cómo</span>.</h2>
+            </div>
+            <div class="reveal">
+                <p>Soy Cinthya, diseñadora UX/UI con enfoque en investigación de usuarios. Trabajo desde el análisis de competidores y las pruebas de usabilidad hasta el prototipo final.</p>
+                <p>Me interesa diseñar productos digitales claros, accesibles y útiles, y tomar decisiones de diseño con datos.</p>
+                <ul class="chip-list">
+                    <li>Agile</li>
+                    <li>UX Research</li>
+                    <li>Benchmarking</li>
+                    <li>Usability Testing</li>
+                    <li>Prototipado</li>
+                    <li>Psicología</li>
+                    <li>UI Design</li>
+                    <li>Rediseño estratégico</li>
+                    <li>MVP</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--brown" aria-labelledby="proceso-title">
+        <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 80V40C120 8 240 8 360 40s240 32 360 0 240-32 360 0 240 32 360 0V80Z"/></svg>
+        <div class="wrap">
+            <div class="section-head reveal">
+                <div>
+                    <p class="eyebrow">Cómo trabajo</p>
+                    <h2 class="h2" id="proceso-title">Mi <span class="accent">proceso</span></h2>
+                </div>
+            </div>
+            <ol class="steps">
+                <li class="reveal">
+                    <h3>Investigar</h3>
+                    <p>Entrevistas, benchmarking y análisis para entender a las personas y su contexto.</p>
+                </li>
+                <li class="reveal">
+                    <h3>Definir</h3>
+                    <p>Convierto los hallazgos en problemas claros, prioridades y un alcance realista.</p>
+                </li>
+                <li class="reveal">
+                    <h3>Prototipar</h3>
+                    <p>Exploro soluciones, de bocetos y flujos a prototipos interactivos.</p>
+                </li>
+                <li class="reveal">
+                    <h3>Validar</h3>
+                    <p>Pruebas de usabilidad para medir, aprender e iterar con evidencia.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="section section--orange cta" aria-labelledby="cta-title">
+        <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 80V40C120 8 240 8 360 40s240 32 360 0 240-32 360 0 240 32 360 0V80Z"/></svg>
+        <div class="section-art" aria-hidden="true">
+            <div class="stipple-dots stipple-dots--a stipple"></div>
+            <div class="stipple-dots stipple-dots--b stipple"></div>
+        </div>
+        <div class="wrap reveal">
+            <p class="eyebrow">Disponible para tiempo completo</p>
+            <h2 class="h2" id="cta-title">¿Buscas una diseñadora UX/UI?</h2>
+            <div class="actions">
+                <a class="btn btn--dark" href="contacto.html">Hablemos <span class="arrow" aria-hidden="true">→</span></a>
+                <a class="btn btn--dark" href="proyectos.html">Ver proyectos</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <button class="music-toggle" id="musicToggle" aria-label="Play music" aria-pressed="false">
+            <span class="music-toggle__icon">▶</span>
+        </button>
+        <audio id="bgMusic" loop preload="none" src="assets/audio/Infraction-Upbeat_Funk_Vintage_Cooking.mp3"></audio>
+    </section>
+</main>
+<footer class="site-footer">
+    <div class="wrap footer-inner">
+        <p>© <span data-year>2026</span> YaRe · Cinthya González · Diseño UX/UI</p>
+        <ul class="footer-links">
+            <li><a href="https://www.behance.net/cinthyaGonzalez7" target="_blank" rel="noopener">Behance ↗<span class="sr-only"> (se abre en una pestaña nueva)</span></a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <br>
+        <p>Música por <a href="https://www.youtube.com/@InfractionMusic" target="_blank" rel="noopener">Infraction Music<span class="sr-only"> (se abre en una pestaña nueva)</span></a></p>
+    </div>
+</footer>
 </body>
 </html>

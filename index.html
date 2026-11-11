@@ -3,11 +3,189 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home | YaRe</title>
-<meta name="description" content="Portafolio personal de Yared.">
-<link rel="stylesheet" href="css/style.css">
+<title>Inicio | YaRe</title>
+<meta name="description" content="Portafolio de Cinthya Reyes González (YaRe), diseñadora UX/UI en México.">
+<meta name="theme-color" content="#151314">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="css/fonts/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="css/fonts/Urbanist-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin><link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add("js");</script>
+<script src="js/main.js" defer></script>
+<script src="js/contours.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#main">Saltar al contenido</a>
 
+<header class="site-header">
+    <div class="wrap header-inner">
+        <a class="logo" href="index.html" aria-label="YaRe, inicio"><span class="logo-mark" aria-hidden="true"></span>YaRe</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+            <span class="sr-only">Menú</span><span class="bars" aria-hidden="true"></span>
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="Principal">
+            <ul>
+                <li><a href="index.html" aria-current="page">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="main">
+    <!-- Hero -->
+    <section class="hero">
+        <svg class="contours" data-contours data-seed="7" aria-hidden="true"></svg>
+        <div class="sun" aria-hidden="true"><div class="halo stipple"></div></div>
+        <div class="stipple-band stipple-band--bottom stipple" aria-hidden="true"></div>
+
+        <div class="wrap hero-inner">
+            <h1 class="display">Hola, soy <span class="accent">Cinthya</span></h1>
+            <p class="lede">Diseñadora UI y UX Researcher Mexicana. Investigo, prototipo y pongo a prueba experiencias digitales centradas en las personas.</p>
+            <div class="actions">
+                <a class="btn btn--primary" href="proyectos.html">Ver proyectos <span class="arrow" aria-hidden="true">→</span></a>
+                <a class="btn" href="contacto.html">Hablemos</a>
+            </div>
+        </div>
+
+        <div class="badge" role="img" aria-label="Disponible para tiempo completo">
+            <svg viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+                <defs><path id="badge-circle" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/></defs>
+                <text><textPath href="#badge-circle" textLength="495" lengthAdjust="spacing">Disponible · Tiempo completo · México · </textPath></text>
+            </svg>
+            <span class="badge-core" aria-hidden="true"></span>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <div class="marquee" aria-label="Habilidades">
+        <div class="marquee-track">
+            <ul>
+                <li>UX Research</li>
+                <li>Benchmarking</li>
+                <li>Usability Testing</li>
+                <li>Prototipado</li>
+                <li>UI Design</li>
+                <li>Arquitectura de información</li>
+            </ul>
+            <ul aria-hidden="true">
+                <li>UX Research</li>
+                <li>Benchmarking</li>
+                <li>Usability Testing</li>
+                <li>Prototipado</li>
+                <li>UI Design</li>
+                <li>Arquitectura de información</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Proyectos cards -->
+    <section class="section" aria-labelledby="destacados-title">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <div>
+                    <p class="eyebrow">Proyectos destacados</p>
+                    <h2 class="h2" id="destacados-title">Casos de <span class="accent">estudio</span></h2>
+                </div>
+                <a class="btn" href="proyectos.html">Ver todos <span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+
+            <div class="grid grid--2">
+                <article class="card reveal">
+                    <a class="card-link" href="cases/caso-estudio-1.html">
+                        <div class="media">
+                            <img src="assets/img/lux-de-jesus.png" alt="Portada del proyecto Lux de Jesus" width="808" height="632" loading="lazy">
+                            <span class="media-ph" aria-hidden="true"><span>Lux de Jesus</span></span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="tags"><li class="tag--hot">Caso de estudio</li><li>UX/UI</li><li>EdTech</li></ul>
+                            <h3 class="card-title">Lux de Jesus</h3>
+                            <p class="card-text">App educativa de fe: diseño UX/UI desde la investigación hasta el prototipo.</p>
+                            <span class="card-cta">Ver caso <span aria-hidden="true">→</span></span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card reveal">
+                    <a class="card-link" href="cases/caso-estudio-2.html">
+                        <div class="media">
+                            <img src="assets/img/prime-video.png" alt="Portada del caso de investigación UX sobre Amazon Prime Video" width="808" height="632" loading="lazy">
+                            <span class="media-ph" aria-hidden="true"><span>Prime Video · Insights</span></span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="tags"><li class="tag--hot">Caso de estudio</li><li>UX Research</li><li>Insights</li></ul>
+                            <h3 class="card-title">Amazon Prime Video: Insights</h3>
+                            <p class="card-text">Investigación UX sobre la experiencia de la plataforma: hallazgos y oportunidades.</p>
+                            <span class="card-cta">Ver caso <span aria-hidden="true">→</span></span>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section class="section section--cream" aria-labelledby="about-title">
+        <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 80V40C120 8 240 8 360 40s240 32 360 0 240-32 360 0 240 32 360 0V80Z"/></svg>
+        <div class="section-art" aria-hidden="true">
+            <svg class="contours" data-contours data-seed="21" data-scale="520"></svg>
+        </div>
+        <div class="wrap split">
+            <div class="reveal">
+                <p class="eyebrow">Un poco sobre mí</p>
+                <h2 class="big-quote" id="about-title">Diseño a partir de lo que las personas <span class="accent">necesitan</span>, no de lo que suponemos.</h2>
+            </div>
+            <div class="reveal">
+                <p class="lede">Soy Cinthya, diseñadora UX/UI con enfoque en investigación metodológica. Mi proceso combina benchmarking, pruebas de usabilidad y prototipado para tomar decisiones de diseño con evidencia.</p>
+                <p class="lede">Aquí hacemos las cosas bien, sino, mejor no las hacemos.</p>
+                <ul class="chip-list">
+                    <li>UX Research</li>
+                    <li>Benchmarking</li>
+                    <li>Usability Testing</li>
+                    <li>Prototipado</li>
+                    <li>UI Design</li>
+                </ul>
+                <div class="actions">
+                    <a class="btn btn--dark" href="sobre-mi.html">Más sobre mí <span class="arrow" aria-hidden="true">→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--orange cta" aria-labelledby="cta-title">
+        <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 80V40C120 8 240 8 360 40s240 32 360 0 240-32 360 0 240 32 360 0V80Z"/></svg>
+        <div class="section-art" aria-hidden="true">
+            <div class="stipple-dots stipple-dots--a stipple"></div>
+            <div class="stipple-dots stipple-dots--b stipple"></div>
+        </div>
+        <div class="wrap reveal">
+            <h2 class="h2" id="cta-title">¿Diseñamos algo juntos?</h2>
+            <div class="actions">
+                <a class="btn btn--dark" href="contacto.html">Hablemos <span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll -->
+    <div>
+        <a href="#" class="arrow-container">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </a>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="wrap footer-inner">
+        <p>© <span data-year>2026</span> YaRe · Cinthya González · Diseño UX/UI</p>
+        <ul class="footer-links">
+            <li><a href="https://www.behance.net/cinthyaGonzález7" target="_blank" rel="noopener">Behance ↗<span class="sr-only"> (se abre en una pestaña nueva)</span></a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>

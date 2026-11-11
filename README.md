@@ -1,22 +1,26 @@
-# Galería virtual de fotos (aviación)
+# YaRe · Portafolio de Cinthya González
 
-Sitio estático (HTML + CSS + JS) hecho para cumplir la
-actividad **"Galería virtual de fotos"**, usando **GitHub Pages**.
+Portafolio de **Cinthya González**, diseñadora UX/UI y UX Researcher.
 
-## 1. Estructura del proyecto
+Diseñado principalmente para la materia "Fundamentos de Elementos Multimedia" de la UDG.
+
+## Estructura
 
 ```
-galeria-aviacion/
-├── index.html          → la página de la galería
-├── css/style.css       → estilos
-├── js/gallery.js       → visor de imágenes (lightbox) con teclado
-├── images/             → aquí viven las 20 fotos
-└── README.md
+├── index.html              → inicio (portada, destacados, sobre mí, contacto)
+├── proyectos.html          → todos los proyectos
+├── sobre-mi.html           → biografía y proceso
+├── contacto.html           → correo y redes
+├── cases/
+│   ├── caso-estudio-1.html → Lux de Jesus
+│   └── caso-estudio-2.html → Amazon Prime Video: Insights
+├── css/style.css           → sistema de diseño (colores, tipografía, componentes)
+├── js/main.js              → menú móvil, animaciones al hacer scroll, marcadores de imagen
+├── js/contours.js          → genera las curvas de nivel en los <svg data-contours>
+└── assets/img/             → imágenes del sitio
 ```
 
-## 2. Notas técnicas
-
-- No usa frameworks ni dependencias que instalar.
-- El visor (clic sobre una foto) funciona con mouse, teclado
-  (flechas ← → para navegar, Esc para cerrar) y foco visible.
-- Es mobile first ya que se adapta a celular, tablet y escritorio.
+## Notas de Contours  
+Cada `<svg class="contours" data-contours data-seed="N">` dibuja un terreno distinto.
+- Cambiar `data-seed` permite obtener otra forma.
+- Cambiar `data-scale` ajusta el tamaño de las "montañas". El valor predeterminado es 420; un número mayor da formas más grandes.
